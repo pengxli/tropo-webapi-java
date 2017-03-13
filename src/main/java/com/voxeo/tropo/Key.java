@@ -82,10 +82,12 @@ public class Key {
 
 		return createKey("mute", value);
 	}
+	@Deprecated
 	public static Key EXIT_TONE(String value) {
 
 		return createKey("exit_tone", value);
 	}
+	@Deprecated
 	public static Key SEND_TONES(Boolean value) {
 
 		return createKey("send_tones", value);
