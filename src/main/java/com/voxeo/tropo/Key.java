@@ -5,6 +5,7 @@ import java.util.Map;
 
 import com.voxeo.tropo.enums.As;
 import com.voxeo.tropo.enums.Channel;
+import com.voxeo.tropo.enums.EmailFormat;
 import com.voxeo.tropo.enums.Format;
 import com.voxeo.tropo.enums.Mode;
 import com.voxeo.tropo.enums.Network;
@@ -253,6 +254,21 @@ public class Key {
     public static Key PROMPT_LOG_SECURITY() {
       
       return createKey("promptLogSecurity", "suppress");
+    }
+    
+    public static Key TRANSCRIPTION_OUT_URI(String value) {
+
+    	return createKey("transcriptionOutURI", value);
+    }
+    
+    public static Key TRANSCRIPTION_EMAIL_FORMAT(EmailFormat emailFormat) {
+
+    	return createKey("transcriptionEmailFormat", emailFormat);
+    }
+    
+    public static Key TRANSCRIPTION_ID(String value) {
+
+    	return createKey("transcriptionID", value);
     }
     
 	public static Key createKey(String name, Object value) {
